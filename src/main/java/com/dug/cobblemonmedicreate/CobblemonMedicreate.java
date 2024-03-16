@@ -32,8 +32,11 @@ public class CobblemonMedicreate implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		
+		//registers the item
 		Registry.register(Registries.ITEM, new Identifier("cobblemon-medicreate", "empty-spray-bottle"), EMPTY_SPRAY_BOTTLE);
+
+		//registers the item group
+		Registry.register(Registries.ITEM_GROUP, new Identifier("cobblemon-medicreate", "main-group"), CREOMEDGROUP);
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
