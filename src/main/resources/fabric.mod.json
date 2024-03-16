@@ -3,9 +3,9 @@
 	"id": "cobblemon-medicreate",
 	"version": "${version}",
 	"name": "Cobblemon Medicreate",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"description": "A mod to add compatability between create and cobblemon for making medicines",
 	"authors": [
-		"Me!"
+		"Duncan Kjellbotn"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
