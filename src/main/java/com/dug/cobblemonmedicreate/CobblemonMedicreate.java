@@ -2,6 +2,7 @@ package com.dug.cobblemonmedicreate;
 
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -9,6 +10,7 @@ import org.slf4j.LoggerFactory;
 import net.minecraft.item.*;
 import net.minecraft.registry.*;
 import net.minecraft.util.*;
+import net.minecraft.text.*;
 
 public class CobblemonMedicreate implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
@@ -18,6 +20,15 @@ public class CobblemonMedicreate implements ModInitializer {
 
 	//creates a new empty spray bottle item
 	public static final Item EMPTY_SPRAY_BOTTLE = new Item(new FabricItemSettings());
+
+	//creates an item group for all the medicreate items
+	public static final ItemGroup CREOMEDGROUP = FabricItemGroup.builder()
+		.icon(() -> new ItemStack(EMPTY_SPRAY_BOTTLE))
+		.displayName(Text.translatable("itemGroup.cobblemon-medicreate.main-group"))
+		.entries((context, entries) ->{
+			entries.add(EMPTY_SPRAY_BOTTLE);
+		})
+		.build();
 
 	@Override
 	public void onInitialize() {
