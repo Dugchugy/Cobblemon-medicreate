@@ -20,10 +20,10 @@ public abstract class MediFluidBase extends FlowableFluid {
     /**
 	 * @return whether the fluid is infinite (which means can be infinitely created like water). In vanilla, it depends on the game rule.
 	 */
-	/*@Override
-	protected boolean isInfinite() {
+	@Override
+	protected boolean isInfinite(World w) {
 		return false;
-	}*/
+	}
 
     /**
 	 * Perform actions when the fluid flows into a replaceable block. Water drops
