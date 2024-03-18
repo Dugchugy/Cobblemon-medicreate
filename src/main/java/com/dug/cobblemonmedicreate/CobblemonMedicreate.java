@@ -12,6 +12,8 @@ import net.minecraft.registry.*;
 import net.minecraft.util.*;
 import net.minecraft.text.*;
 
+import com.dug.cobblemonmedicreate.Fluids.*;
+
 public class CobblemonMedicreate implements ModInitializer {
 	// This logger is used to write text to the console and the log file.
 	// It is considered best practice to use your mod id as the logger's name.
@@ -37,6 +39,9 @@ public class CobblemonMedicreate implements ModInitializer {
 
 		//registers the item group
 		Registry.register(Registries.ITEM_GROUP, new Identifier("cobblemon-medicreate", "main-group"), CREOMEDGROUP);
+
+		//initalizes the fluids
+		MedicinalBrewFluid.Register();
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
