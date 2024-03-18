@@ -1,9 +1,8 @@
 package com.dug.cobblemonmedicreate.Fluids;
 
-import net.minecraft.block.BlockState;
-import net.minecraft.fluid.FlowableFluid;
-import net.minecraft.fluid.Fluid;
-import net.minecraft.fluid.FluidState;
+import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
+import net.minecraft.block.*;
+import net.minecraft.fluid.*;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.Items;
@@ -27,6 +26,11 @@ public abstract class MedicinalBrewFluid extends MediFluidBase{
      * A static reference to the bucket for this fluid
      */
     public static Item BUCKET;
+
+    /**
+     * A static refernece to the block form of this fluid
+     */
+    public static Block BLOCK;
 
     /**
      * @return the still reference for this fluid
@@ -54,7 +58,7 @@ public abstract class MedicinalBrewFluid extends MediFluidBase{
  
 	@Override
 	protected BlockState toBlockState(FluidState fluidState) {
-		return YOUR_FLUID_BLOCK_HERE.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(fluidState));
+		return BLOCK.getDefaultState().with(Properties.LEVEL_15, getBlockStateLevel(fluidState));
 	}
 
     public static class Flowing extends MedicinalBrewFluid {
@@ -97,6 +101,9 @@ public abstract class MedicinalBrewFluid extends MediFluidBase{
         new MedicinalBrewFluid.Flowing());
         BUCKET = Registry.register(Registries.ITEM, new Identifier("cobblemon-medicreate", "medicinal-brew-bucket"), 
         new BucketItem(STILL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
+
+        BLOCK = Registry.register(Registries.BLOCK, new Identifier("cobblemon-medicreate", "medicinal-brew-block"), 
+        new FluidBlock(STILL, FabricBlockSettings.copy(Blocks.WATER)){});
     }
 
 
