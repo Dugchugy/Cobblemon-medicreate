@@ -40,8 +40,10 @@ public class CobblemonMedicreate implements ModInitializer {
 		//registers the item group
 		Registry.register(Registries.ITEM_GROUP, new Identifier("cobblemon-medicreate", "main-group"), CREOMEDGROUP);
 
+		RegistryKey<ItemGroup> GroupKey = RegistryKey.of(Registries.ITEM_GROUP.getKey(), new Identifier("cobblemon-medicreate", "main-group"));
+
 		//initalizes the fluids
-		MedicinalBrewFluid.Register();
+		MedicinalBrewFluid.Register(GroupKey);
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
