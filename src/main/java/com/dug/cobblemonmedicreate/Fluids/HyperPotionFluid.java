@@ -1,8 +1,6 @@
 package com.dug.cobblemonmedicreate.Fluids;
 
-import com.dug.cobblemonmedicreate.CobblemonMedicreate;
 
-import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
