@@ -44,6 +44,10 @@ public class CobblemonMedicreate implements ModInitializer {
 
 		//initalizes the fluids
 		MedicinalBrewFluid.Register(GroupKey);
+		PotionFluid.Register(GroupKey);
+		SuperPotionFluid.Register(GroupKey);
+		HyperPotionFluid.Register(GroupKey);
+		MaxPotionFluid.Register(GroupKey);
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
