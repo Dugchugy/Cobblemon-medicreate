@@ -1,13 +1,19 @@
 package com.dug.cobblemonmedicreate.Fluids;
 
+import com.dug.cobblemonmedicreate.CobblemonMedicreate;
+
+import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroup;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
 import net.minecraft.fluid.*;
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
+import net.minecraft.item.ItemGroup;
 import net.minecraft.item.Items;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.registry.RegistryKey;
 import net.minecraft.state.StateManager;
 import net.minecraft.state.property.Properties;
 import net.minecraft.util.Identifier;
@@ -94,7 +100,7 @@ public abstract class MedicinalBrewFluid extends MediFluidBase{
     /**
      * A function that calls the required registy functions to register the fluid
      */
-    public static void Register(){
+    public static void Register(RegistryKey<ItemGroup> group){
         STILL = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "medicinal-brew"), 
         new MedicinalBrewFluid.Still());
         FLOW = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "medicinal-brew-flow"), 
@@ -104,6 +110,10 @@ public abstract class MedicinalBrewFluid extends MediFluidBase{
 
         BLOCK = Registry.register(Registries.BLOCK, new Identifier("cobblemon-medicreate", "medicinal-brew-block"), 
         new FluidBlock(STILL, FabricBlockSettings.copy(Blocks.WATER)){});
+
+        ItemGroupEvents.modifyEntriesEvent(group).register(content -> {
+            content.add(BUCKET);
+        });
     }
 
 
