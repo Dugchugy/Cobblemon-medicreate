@@ -4,6 +4,7 @@
 plugins {
 	id "fabric-loom" version "1.5.+"
 	id "io.github.p03w.machete" version "1.+" // automatic jar compressing on build
+	id "org.jetbrains.kotlin.jvm" version "1.9.21"
 	id "maven-publish"
 }
 
@@ -31,6 +32,8 @@ repositories {
 	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" } // Reach Entity Attributes
 	maven { url = "https://jitpack.io/" } // Mixin Extras, Fabric ASM
 	maven { url = "https://maven.tterrag.com/" } // Flywheel
+	maven { url = 'https://maven.wispforest.io' }
+	maven { url = "https://maven.impactdev.net/repository/development/"}
 }
 
 configurations.configureEach {
@@ -59,6 +62,8 @@ dependencies {
 		it.mappings("net.fabricmc:yarn:${project.yarn_mappings}:v2")
 		it.parchment("org.parchmentmc.data:parchment-${minecraft_version}:${parchment_version}@zip")
 	})
+	//mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+
 	modImplementation("net.fabricmc:fabric-loader:${fabric_loader_version}")
 
 	// dependencies
@@ -66,6 +71,9 @@ dependencies {
 
 	// Create - dependencies are added transitively
 	modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_version}")
+
+	// Cobblemon 
+	modImplementation("com.cobblemon:fabric:${project.cobblemon_version}+1.20.1")
 
 	// Development QOL
 	modLocalRuntime("maven.modrinth:lazydfu:${lazydfu_version}")
@@ -80,6 +88,14 @@ dependencies {
 		case "disabled": break
 		default: println("Unknown recipe viewer specified: ${recipe_viewer}. Must be JEI, REI, EMI, or disabled.")
 	}
+
+	// owo config
+	annotationProcessor modImplementation("io.wispforest:owo-lib:${project.owo_version}")
+
+	// Modmenu
+	modCompileOnly("maven.modrinth:modmenu:${project.modmenu_modrinth_id}")
+	modRuntimeOnly("maven.modrinth:modmenu:${project.modmenu_modrinth_id}")
+
 	// if you would like to add integration with them, uncomment them here.
 //    modCompileOnly("mezz.jei:jei-${minecraft_version}-fabric:${jei_fabric_version}")
 //    modCompileOnly("mezz.jei:jei-${minecraft_version}-common:${jei_fabric_version}")
