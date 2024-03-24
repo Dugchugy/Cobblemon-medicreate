@@ -5,5 +5,10 @@
     "item.cobblemon-medicreate.potion-bucket": "Bucket of Potion",
     "item.cobblemon-medicreate.super-potion-bucket": "Bucket of Super Potion",
     "item.cobblemon-medicreate.hyper-potion-bucket": "Bucket of Hyper Potion",
-    "item.cobblemon-medicreate.max-potion-bucket": "Bucket of Max Potion"
+    "item.cobblemon-medicreate.max-potion-bucket": "Bucket of Max Potion",
+    "block.cobblemon-medicreate.medicinal-brew-block": "Medicinal Brew",
+    "block.cobblemon-medicreate.potion-block": "Potion",
+    "block.cobblemon-medicreate.super-potion-block": "Super Potion",
+    "block.cobblemon-medicreate.hyper-potion-block": "Hyper Potion",
+    "block.cobblemon-medicreate.max-potion-block": "Max Potion"
 }
