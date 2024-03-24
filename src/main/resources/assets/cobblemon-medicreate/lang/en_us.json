@@ -1,5 +1,9 @@
 {
     "item.cobblemon-medicreate.empty-spray-bottle": "Empty Spray Bottle",
     "itemGroup.cobblemon-medicreate.main-group": "Cobblemon MediCreate",
-    "item.cobblemon-medicreate.medicinal-brew-bucket": "Bucket of Medicinal Brew"
+    "item.cobblemon-medicreate.medicinal-brew-bucket": "Bucket of Medicinal Brew",
+    "item.cobblemon-medicreate.potion-bucket": "Bucket of Potion",
+    "item.cobblemon-medicreate.super-potion-bucket": "Bucket of Super Potion",
+    "item.cobblemon-medicreate.hyper-potion-bucket": "Bucket of Hyper Potion",
+    "item.cobblemon-medicreate.max-potion-bucket": "Bucket of Max Potion"
 }
