@@ -1,0 +1,17 @@
+{
+    "type": "create:emptying",
+    "ingredients": [
+        {
+            "item": "cobblemon-medicreate:super-potion-bucket"
+        }
+    ],
+    "result": [
+        {
+            "item": "minecraft:bucket"
+        },
+        {
+            "fluid": "cobblemon-medicreate:super-potion",
+            "amount": 1000
+        }
+    ]
+}
