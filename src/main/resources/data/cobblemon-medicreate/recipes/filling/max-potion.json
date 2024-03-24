@@ -1,0 +1,17 @@
+{
+    "type": "create:filling",
+    "ingredients": [
+        {
+            "item": "cobblemon-medicreate:empty-spray-bottle"
+        },
+        {
+            "fluid": "cobblemon-medicreate:max-potion",
+            "amount": 250
+        }
+    ],
+    "results": [
+        {
+            "item": "cobblemon:max-potion"
+        }
+    ]
+}
