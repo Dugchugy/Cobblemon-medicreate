@@ -1,6 +1,8 @@
 package com.dug.cobblemonmedicreate.Fluids;
 
 
+import net.fabricmc.fabric.api.client.render.fluid.v1.FluidRenderHandlerRegistry;
+import net.fabricmc.fabric.api.client.render.fluid.v1.SimpleFluidRenderHandler;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.minecraft.block.*;
@@ -112,6 +114,14 @@ public abstract class MedicinalBrewFluid extends MediFluidBase{
         ItemGroupEvents.modifyEntriesEvent(group).register(content -> {
             content.add(BUCKET);
         });
+    }
+
+    public static void registerRenderer(){
+        FluidRenderHandlerRegistry.INSTANCE.register(STILL, FLOW, new SimpleFluidRenderHandler(
+            new Identifier("minecraft:block/water_still"),
+			new Identifier("minecraft:block/water_flow"),
+			0x4CC248
+        ));
     }
 
 
