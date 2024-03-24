@@ -6,6 +6,7 @@
         },
         {
             "fluid": "cobblemon-medicreate:potion",
+            "nbt": {},
             "amount": 250
         }
     ],

@@ -1,17 +1,18 @@
 {
     "type": "create:filling",
     "ingredients": [
-        {
-            "item": "cobblemon-medicreate:empty-spray-bottle"
-        },
-        {
-            "fluid": "cobblemon-medicreate:hyper-potion",
-            "amount": 250
-        }
+      {
+        "item": "cobblemon-medicreate:empty-spray-bottle"
+      },
+      {
+        "fluid": "cobblemon-medicreate:hyper-potion",
+        "nbt": {},
+        "amount": 250
+      }
     ],
     "results": [
-        {
-            "item": "cobblemon:hyper-potion"
-        }
+      {
+        "item": "cobblemon:hyper-potion"
+      }
     ]
-}
+  }
