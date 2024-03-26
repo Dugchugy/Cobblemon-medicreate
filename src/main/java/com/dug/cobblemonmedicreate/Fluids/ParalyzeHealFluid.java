@@ -100,9 +100,9 @@ public abstract class ParalyzeHealFluid extends MediFluidBase{
      */
     public static void Register(RegistryKey<ItemGroup> group){
         STILL = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "paralyze-heal"), 
-        new MedicinalBrewFluid.Still());
+        new ParalyzeHealFluid.Still());
         FLOW = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "paralyze-heal-flow"), 
-        new MedicinalBrewFluid.Flowing());
+        new ParalyzeHealFluid.Flowing());
         BUCKET = Registry.register(Registries.ITEM, new Identifier("cobblemon-medicreate", "paralyze-heal-bucket"), 
         new BucketItem(STILL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 

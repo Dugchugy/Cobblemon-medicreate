@@ -100,9 +100,9 @@ public abstract class AwakeningFluid extends MediFluidBase{
      */
     public static void Register(RegistryKey<ItemGroup> group){
         STILL = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "awakening"), 
-        new MedicinalBrewFluid.Still());
+        new AwakeningFluid.Still());
         FLOW = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "awakening-flow"), 
-        new MedicinalBrewFluid.Flowing());
+        new AwakeningFluid.Flowing());
         BUCKET = Registry.register(Registries.ITEM, new Identifier("cobblemon-medicreate", "awakening-bucket"), 
         new BucketItem(STILL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 

@@ -100,9 +100,9 @@ public abstract class FullHealFluid extends MediFluidBase{
      */
     public static void Register(RegistryKey<ItemGroup> group){
         STILL = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "full-heal"), 
-        new MedicinalBrewFluid.Still());
+        new FullHealFluid.Still());
         FLOW = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "full-heal-flow"), 
-        new MedicinalBrewFluid.Flowing());
+        new FullHealFluid.Flowing());
         BUCKET = Registry.register(Registries.ITEM, new Identifier("cobblemon-medicreate", "full-heal-bucket"), 
         new BucketItem(STILL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 

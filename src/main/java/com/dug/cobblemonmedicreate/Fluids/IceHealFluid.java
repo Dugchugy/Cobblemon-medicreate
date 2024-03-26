@@ -100,9 +100,9 @@ public abstract class IceHealFluid extends MediFluidBase{
      */
     public static void Register(RegistryKey<ItemGroup> group){
         STILL = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "ice-heal"), 
-        new MedicinalBrewFluid.Still());
+        new IceHealFluid.Still());
         FLOW = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "ice-heal-flow"), 
-        new MedicinalBrewFluid.Flowing());
+        new IceHealFluid.Flowing());
         BUCKET = Registry.register(Registries.ITEM, new Identifier("cobblemon-medicreate", "ice-heal-bucket"), 
         new BucketItem(STILL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 

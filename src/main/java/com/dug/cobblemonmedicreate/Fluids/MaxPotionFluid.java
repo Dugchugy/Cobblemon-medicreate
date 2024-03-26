@@ -100,9 +100,9 @@ public abstract class MaxPotionFluid extends MediFluidBase{
      */
     public static void Register(RegistryKey<ItemGroup> group){
         STILL = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "max-potion"), 
-        new MedicinalBrewFluid.Still());
+        new MaxPotionFluid.Still());
         FLOW = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "max-potion-flow"), 
-        new MedicinalBrewFluid.Flowing());
+        new MaxPotionFluid.Flowing());
         BUCKET = Registry.register(Registries.ITEM, new Identifier("cobblemon-medicreate", "max-potion-bucket"), 
         new BucketItem(STILL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 

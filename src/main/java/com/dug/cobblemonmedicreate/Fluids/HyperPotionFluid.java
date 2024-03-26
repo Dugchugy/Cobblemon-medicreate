@@ -100,9 +100,9 @@ public abstract class HyperPotionFluid extends MediFluidBase{
      */
     public static void Register(RegistryKey<ItemGroup> group){
         STILL = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "hyper-potion"), 
-        new MedicinalBrewFluid.Still());
+        new HyperPotionFluid.Still());
         FLOW = Registry.register(Registries.FLUID, new Identifier("cobblemon-medicreate", "hyper-potion-flow"), 
-        new MedicinalBrewFluid.Flowing());
+        new HyperPotionFluid.Flowing());
         BUCKET = Registry.register(Registries.ITEM, new Identifier("cobblemon-medicreate", "hyper-potion-bucket"), 
         new BucketItem(STILL, new Item.Settings().recipeRemainder(Items.BUCKET).maxCount(1)));
 
