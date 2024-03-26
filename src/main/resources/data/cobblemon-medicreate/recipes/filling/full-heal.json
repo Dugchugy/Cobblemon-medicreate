@@ -1,0 +1,18 @@
+{
+    "type": "create:filling",
+    "ingredients": [
+        {
+            "item": "cobblemon-medicreate:empty-spray-bottle"
+        },
+        {
+            "fluid": "cobblemon-medicreate:full-heal",
+            "nbt": {},
+            "amount": 27000
+        }
+    ],
+    "results": [
+        {
+            "item": "cobblemon:full_heal"
+        }
+    ]
+}
