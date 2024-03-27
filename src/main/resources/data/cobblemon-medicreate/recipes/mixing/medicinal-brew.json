@@ -1,0 +1,19 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "item": "cobblemonm:medicinal_leek"
+        },
+        {
+            "fluid": "minecraft:water",
+            "amount": 81000
+        }
+    ],
+    "results": [
+        {
+            "fluid": "cobblemon-medicreate:medicinal-brew",
+            "amount": 81000
+        }
+    ],
+    "heatRequirement": "none"
+}
