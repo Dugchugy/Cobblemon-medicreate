@@ -22,5 +22,7 @@
     "block.cobblemon-medicreate.awakening-block": "Awakening",
     "block.cobblemon-medicreate.burn-heal-block": "Burn Heal",
     "block.cobblemon-medicreate.ice-heal-block": "Ice Heal",
-    "block.cobblemon-medicreate.paralyze-heal-block": "Paralyze Heal"
+    "block.cobblemon-medicreate.paralyze-heal-block": "Paralyze Heal",
+    "block.cobblemon-medicreate.full-heal-block": "Full Heal",
+    "block.cobblemon-medicreate.full-restore-block": "Full Restore"
 }
