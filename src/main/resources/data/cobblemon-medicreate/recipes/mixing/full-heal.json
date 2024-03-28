@@ -1,0 +1,19 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "item": "cobblemonm:lum_berry"
+        },
+        {
+            "fluid": "cobblemon-medicreate:medicinal-brew",
+            "amount": 81000
+        }
+    ],
+    "results": [
+        {
+            "fluid": "cobblemon-medicreate:full-heal",
+            "amount": 81000
+        }
+    ],
+    "heatRequirement": "heated"
+}
