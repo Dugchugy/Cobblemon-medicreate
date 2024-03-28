@@ -1,0 +1,19 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "item": "cobblemonm:aspear_berry"
+        },
+        {
+            "fluid": "cobblemon-medicreate:medicinal-brew",
+            "amount": 81000
+        }
+    ],
+    "results": [
+        {
+            "fluid": "cobblemon-medicreate:awakening",
+            "amount": 81000
+        }
+    ],
+    "heatRequirement": "heated"
+}
