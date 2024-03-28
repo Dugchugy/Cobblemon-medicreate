@@ -28,5 +28,9 @@
     "block.cobblemon-medicreate.ice-heal-block": "Ice Heal",
     "block.cobblemon-medicreate.paralyze-heal-block": "Paralyze Heal",
     "block.cobblemon-medicreate.full-heal-block": "Full Heal",
-    "block.cobblemon-medicreate.full-restore-block": "Full Restore"
+    "block.cobblemon-medicreate.full-restore-block": "Full Restore",
+    "block.cobblemon-medicreate.ether-block": "Ether",
+    "block.cobblemon-medicreate.max-ether-block": "Max Ether",
+    "block.cobblemon-medicreate.elixir-block": "Elixir",
+    "block.cobblemon-medicreate.max-elixir-block": "Max Elixir"
 }
