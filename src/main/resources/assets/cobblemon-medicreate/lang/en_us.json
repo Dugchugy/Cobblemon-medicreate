@@ -17,5 +17,10 @@
     "block.cobblemon-medicreate.potion-block": "Potion",
     "block.cobblemon-medicreate.super-potion-block": "Super Potion",
     "block.cobblemon-medicreate.hyper-potion-block": "Hyper Potion",
-    "block.cobblemon-medicreate.max-potion-block": "Max Potion"
+    "block.cobblemon-medicreate.max-potion-block": "Max Potion",
+    "block.cobblemon-medicreate.antidote-block": "Antidote",
+    "block.cobblemon-medicreate.awakening-block": "Awakening",
+    "block.cobblemon-medicreate.burn-heal-block": "Burn Heal",
+    "block.cobblemon-medicreate.ice-heal-block": "Ice Heal",
+    "block.cobblemon-medicreate.paralyze-heal-block": "Paralyze Heal"
 }
