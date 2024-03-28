@@ -101,5 +101,12 @@ public class CobblemonMedicreateClient implements ClientModInitializer {
 				new Identifier("minecraft:block/water_flow"),
 				0xF174EF
 		));
+
+		FluidRenderHandlerRegistry.INSTANCE.register(ElixirFluid.STILL, ElixirFluid.FLOW, 
+		new SimpleFluidRenderHandler(
+				new Identifier("minecraft:block/water_still"),
+				new Identifier("minecraft:block/water_flow"),
+				0xF19D74
+		));
 	}
 }
