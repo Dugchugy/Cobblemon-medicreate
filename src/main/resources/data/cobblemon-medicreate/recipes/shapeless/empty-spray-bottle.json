@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:shapeless",
+    "ingredients": [
+        {
+            "item": "minecraft:empty-bottle"
+        },
+        {
+            "item": "minecraft:iron-nugget"
+        }
+    ],
+    "results": [
+        {
+            "item": "cobblemon-medicreate:empty-spray-bottle"
+        }
+    ]
+}
