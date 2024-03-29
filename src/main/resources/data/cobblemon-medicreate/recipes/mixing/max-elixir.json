@@ -1,0 +1,19 @@
+{
+    "type": "create:mixing",
+    "ingredients": [
+        {
+            "item": "cobblemonm:pep_up_plant"
+        },
+        {
+            "fluid": "cobblemon-medicreate:elixir",
+            "amount": 81000
+        }
+    ],
+    "results": [
+        {
+            "fluid": "cobblemon-medicreate:max-elixir",
+            "amount": 81000
+        }
+    ],
+    "heatRequirement": "heated"
+}
