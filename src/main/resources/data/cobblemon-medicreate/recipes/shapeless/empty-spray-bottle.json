@@ -1,5 +1,5 @@
 {
-    "type": "minecraft:shapeless",
+    "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
             "item": "minecraft:empty-bottle"
@@ -10,7 +10,8 @@
     ],
     "results": [
         {
-            "item": "cobblemon-medicreate:empty-spray-bottle"
+            "item": "cobblemon-medicreate:empty-spray-bottle",
+            "count": 1
         }
     ]
 }
