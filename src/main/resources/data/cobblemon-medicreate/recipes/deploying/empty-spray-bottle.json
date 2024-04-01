@@ -2,10 +2,10 @@
     "type": "create:deploying",
     "ingredients": [
         {
-            "item": "minecraft:empty-bottle"
+            "item": "minecraft:glass_bottle"
         },
         {
-            "item": "minecraft:iron-nugget"
+            "item": "minecraft:iron_nugget"
         }
     ],
     "results": [
