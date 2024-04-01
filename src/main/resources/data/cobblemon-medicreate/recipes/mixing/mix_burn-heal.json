@@ -2,7 +2,7 @@
     "type": "create:mixing",
     "ingredients": [
         {
-            "item": "cobblemonm:rawst_berry"
+            "item": "cobblemon:rawst_berry"
         },
         {
             "fluid": "cobblemon-medicreate:medicinal-brew",

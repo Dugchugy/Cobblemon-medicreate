@@ -2,7 +2,7 @@
     "type": "create:mixing",
     "ingredients": [
         {
-            "item": "cobblemonm:sitrus_berry"
+            "item": "cobblemon:sitrus_berry"
         },
         {
             "fluid": "cobblemon-medicreate:super-potion",

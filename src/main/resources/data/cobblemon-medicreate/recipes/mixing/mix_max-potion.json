@@ -2,7 +2,7 @@
     "type": "create:mixing",
     "ingredients": [
         {
-            "item": "cobblemonm:vivichoke"
+            "item": "cobblemon:vivichoke"
         },
         {
             "fluid": "cobblemon-medicreate:hyper-potion",

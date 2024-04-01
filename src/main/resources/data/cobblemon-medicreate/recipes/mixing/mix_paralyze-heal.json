@@ -2,7 +2,7 @@
     "type": "create:mixing",
     "ingredients": [
         {
-            "item": "cobblemonm:cheri_berry"
+            "item": "cobblemon:cheri_berry"
         },
         {
             "fluid": "cobblemon-medicreate:medicinal-brew",

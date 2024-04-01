@@ -2,7 +2,7 @@
     "type": "create:mixing",
     "ingredients": [
         {
-            "item": "cobblemonm:pep_up_plant"
+            "item": "cobblemon:pep_up_plant"
         },
         {
             "fluid": "cobblemon-medicreate:elixir",

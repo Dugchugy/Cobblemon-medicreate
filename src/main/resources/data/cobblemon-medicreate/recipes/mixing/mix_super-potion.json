@@ -2,7 +2,7 @@
     "type": "create:mixing",
     "ingredients": [
         {
-            "item": "cobblemonm:energy_root"
+            "item": "cobblemon:energy_root"
         },
         {
             "fluid": "cobblemon-medicreate:potion",

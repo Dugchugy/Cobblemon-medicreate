@@ -2,7 +2,7 @@
     "type": "create:mixing",
     "ingredients": [
         {
-            "item": "cobblemonm:medicinal_leek"
+            "item": "cobblemon:medicinal_leek"
         },
         {
             "fluid": "minecraft:water",

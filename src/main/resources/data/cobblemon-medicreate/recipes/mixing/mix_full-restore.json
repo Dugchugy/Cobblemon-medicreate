@@ -2,7 +2,7 @@
     "type": "create:mixing",
     "ingredients": [
         {
-            "item": "cobblemonm:lum_berry"
+            "item": "cobblemon:lum_berry"
         },
         {
             "fluid": "cobblemon-medicreate:max-potion",
