@@ -2,10 +2,12 @@
     "type": "minecraft:crafting_shapeless",
     "ingredients": [
         {
-            "item": "minecraft:glass_bottle"
+            "item": "minecraft:glass_bottle",
+            "count": 1
         },
         {
-            "item": "minecraft:iron_nugget"
+            "item": "minecraft:iron_nugget",
+            "count": 1
         }
     ],
     "results": [
